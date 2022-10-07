@@ -14,11 +14,11 @@ if Tax_Inc>250000:
         if Tax_Inc>1000000:
             brac1=(Tax_Inc-1000000)*0.3
             print("Total Tax to pay:",int(brac1+112500))
-            print("Estimated Inhand Salary:",int((T_Inc-brac1)/12))
+            print("Estimated Inhand Salary:",int((T_Inc-(brac1+112500))/12))
         else:
             brac2=(Tax_Inc-500000)*0.2
             print("Total Tax to pay:",int(brac2+12500))
-            print("Estimated Inhand Salary:",int((T_Inc-brac2)/12))
+            print("Estimated Inhand Salary:",int((T_Inc-(brac2+12500))/12))
     else:
         brac3=(Tax_Inc-250000)*0.05
         print("Total Tax to pay:",int(brac3))
